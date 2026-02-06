@@ -27,3 +27,31 @@ body {
   font-size: 1.2em;
   color: #b71c1c;
 }
+.cat-love {
+  width: 260px;
+  max-width: 85%;
+  margin-top: 18px;
+  animation: cuddle 3s ease-in-out infinite;
+}
+
+@keyframes cuddle {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.05); }
+  70%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+.floating-cat {
+  position: fixed;
+  bottom: -30px;
+  animation: floatUp 4s linear forwards;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
