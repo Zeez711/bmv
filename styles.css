@@ -73,11 +73,11 @@ h1 {
   100% { transform: scale(1); }
 }
 
-/* 🐱 Corner cats (first page) — scroll away with page */
+/* 🐱 Corner cats — scroll away with page */
 .corner-cat {
-  position: absolute;     /* ✅ scrolls away (not fixed) */
+  position: absolute;
   top: 8px;
-  width: 70px;            /* ✅ smaller so it won't hide text */
+  width: 70px;          /* default size (right cat) */
   max-width: 18vw;
   height: auto;
   z-index: 10;
@@ -85,12 +85,13 @@ h1 {
   animation: floaty 3s ease-in-out infinite;
 }
 
-/* Left corner */
+/* Left corner — SMALLER */
 .left-cat {
   left: 8px;
+  width: 55px;          /* 👈 smaller left cat */
 }
 
-/* Right corner */
+/* Right corner — normal */
 .right-cat {
   right: 8px;
 }
@@ -98,7 +99,10 @@ h1 {
 /* 📱 Very small phones */
 @media (max-width: 360px) {
   .corner-cat {
-    width: 55px;
+    width: 50px;
+  }
+  .left-cat {
+    width: 42px;        /* even smaller on tiny screens */
   }
 }
 
