@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAY MY GHALA 🕺🕺🕺🕺🕺🕺💘💘</title>
-    <link rel="stylesheet" href="./yes_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YAY MY GHALA 🕺🕺🕺🕺🕺🕺💘💘</title>
+  <link rel="stylesheet" href="./yes_style.css">
 </head>
+
 <body>
-    <div class="container">
-<h1 class="header_text">YAYYY MY GHALA SAID YES!! 🕺🕺🕺🕺🕺🕺💘💘 mowaaaaaa77777777777777777</h1>
-<p class="subtext">mewooo mewooo mewooo the cats happy now 🐱💘</p>
-        
-        <div class="gif_container">
-           <img
-  src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM21zcDVwemU4azlvOWc4ZzNtZTRwaG0zNXNocXRsbWp0bWU0eHd2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif"
-  class="cat-love"
-  alt="loving cats mewooo">
+  <div class="container">
+    <h1 class="header_text">
+      YAYYY MY GHALA SAID YES!! 🕺🕺🕺🕺🕺🕺💘💘 mowaaaaaa77777777777777777
+    </h1>
 
+    <p class="subtext">
+      mewoooo mewooo mewooo the cats happy now 🐱💘
+    </p>
+
+    <div class="gif_container">
+      <img
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM21zcDVwemU4azlvOWc4ZzNtZTRwaG0zNXNocXRsbWp0bWU0eHd2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif"
+        class="cat-love"
+        alt="loving cats mewooo">
     </div>
-    <script>
-  const emojis = ["🐱", "🐾", "💗", "😻"];
 
-  setInterval(() => {
-    const span = document.createElement("span");
-    span.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-    span.className = "floating-cat";
-    span.style.left = Math.random() * 100 + "vw";
-    span.style.fontSize = Math.random() * 18 + 22 + "px";
+    <!-- ❤️ I love you in many languages -->
+    <div class="love-languages">
+  <span>❤️ I love you</span>
+  <span>❤️ أحبك</span>
+  <span>❤️ Je t’aime</span>
+  <span>❤️ Ti amo</span>
+  <span>❤️ Te amo</span>
+  <span>❤️ Ich liebe dich</span>
+  <span>❤️ Seni seviyorum</span>
+  <span>❤️ 愛してる</span>
+  <span>❤️ 사랑해</span>
 
-    document.body.appendChild(span);
+  <span class="My-Ghala"><strong>My Ghala ❤️🐾</strong></span>
+</div>
 
-    setTimeout(() => {
-      span.remove();
-    }, 4000);
-  }, 400);
-</script>
+  </div>
 
+  <!-- 🐾 Floating cat love -->
+  <script>
+    const emojis = ["🐱", "🐾", "💗", "😻"];
+
+    setInterval(() => {
+      const span = document.createElement("span");
+      span.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      span.className = "floating-cat";
+      span.style.left = Math.random() * 100 + "vw";
+      span.style.fontSize = Math.random() * 18 + 22 + "px";
+
+      document.body.appendChild(span);
+
+      setTimeout(() => {
+        span.remove();
+      }, 4000);
+    }, 400);
+  </script>
 </body>
 </html>
