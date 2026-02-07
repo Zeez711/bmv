@@ -1,59 +1,63 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f9e3e3;
-    font-family: 'Arial', sans-serif;
-    flex-direction: column;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #d32f2f;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .yes-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .no-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .gif_container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-  .subtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9e3e3;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5em;
+  color: #d32f2f;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gif_container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.subtext {
   margin-top: 10px;
   font-size: 1.1em;
   color: #b71c1c;
 }
+
+/* Main GIF pulse */
 .cat-love {
   width: 220px;
   max-width: 80%;
@@ -68,35 +72,34 @@ body {
   70%  { transform: scale(1.02); }
   100% { transform: scale(1); }
 }
-/* 🐱 Corner cats (first page) */
+
+/* 🐱 Corner cats (first page) — scroll away with page */
 .corner-cat {
-  position: fixed;
-  top: 10px;
-  width: 90px;
-  max-width: 22vw; /* responsive on phones */
+  position: absolute;     /* ✅ scrolls away (not fixed) */
+  top: 8px;
+  width: 70px;            /* ✅ smaller so it won't hide text */
+  max-width: 18vw;
   height: auto;
-  z-index: 1000;
-  pointer-events: none; /* don't block buttons */
+  z-index: 10;
+  pointer-events: none;
+  animation: floaty 3s ease-in-out infinite;
 }
 
 /* Left corner */
 .left-cat {
-  left: 10px;
+  left: 8px;
 }
 
 /* Right corner */
 .right-cat {
-  right: 10px;
+  right: 8px;
 }
 
-/* 📱 Smaller phones */
+/* 📱 Very small phones */
 @media (max-width: 360px) {
   .corner-cat {
-    width: 70px;
+    width: 55px;
   }
-}
-.corner-cat {
-  animation: floaty 3s ease-in-out infinite;
 }
 
 @keyframes floaty {
