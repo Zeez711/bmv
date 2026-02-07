@@ -1,11 +1,11 @@
 const messages = [
   "No My Ghala😼",
-  "Gahla… are you sure? 🥺",
+  "Gahla… are you sure? 😔",
   "My Ghala pleaseee 💗",
-  "mewooo… don’t do this to me 😿",
-  "What if I bribe you with cat pics? 🐱📸",
+  " the kitten said mewooo… don’t do this to your Ziad! 😿",
+  "What if I buy you food? 😋",
   "Tiny kitten is crying now 😭🐾",
-  "Ok ok… last chance, My Ghala 😽",
+  "Ok ok… last chance, My Ghala 😔",
   "MEWOOO PLEASEEE 😾💘",
   "I’ll be extra sad… mewooo 😿",
   "Just kidding — say yes, My Ghala ❤️🐾"
