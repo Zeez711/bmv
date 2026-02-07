@@ -68,3 +68,39 @@ body {
   70%  { transform: scale(1.02); }
   100% { transform: scale(1); }
 }
+/* 🐱 Corner cats (first page) */
+.corner-cat {
+  position: fixed;
+  top: 10px;
+  width: 90px;
+  max-width: 22vw; /* responsive on phones */
+  height: auto;
+  z-index: 1000;
+  pointer-events: none; /* don't block buttons */
+}
+
+/* Left corner */
+.left-cat {
+  left: 10px;
+}
+
+/* Right corner */
+.right-cat {
+  right: 10px;
+}
+
+/* 📱 Smaller phones */
+@media (max-width: 360px) {
+  .corner-cat {
+    width: 70px;
+  }
+}
+.corner-cat {
+  animation: floaty 3s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
