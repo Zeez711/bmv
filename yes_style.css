@@ -1,45 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f9e3e3;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f9e3e3;
+  font-family: 'Arial', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 🔑 NOT center */
+  overflow-x: hidden;
 }
 
+/* Main container */
 .container {
-    text-align: center;
+  width: 100%;
+  max-width: 420px; /* perfect for phones */
+  padding: 20px;
+  text-align: center;
 }
 
+/* Big title — responsive now */
 .header_text {
-    font-size: 3em;
-    color: #d32f2f;
+  font-size: 1.8rem; /* smaller than 3em */
+  line-height: 1.25;
+  color: #d32f2f;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.gif_container img {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
-}
+/* Sub text */
 .subtext {
   margin-top: 12px;
-  font-size: 1.2em;
+  font-size: 1.1rem;
   color: #b71c1c;
 }
-.cat-love {
-  width: 260px;
-  max-width: 85%;
+
+/* GIF container */
+.gif_container {
   margin-top: 18px;
+}
+
+/* Cat GIF */
+.cat-love {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
   animation: cuddle 3s ease-in-out infinite;
 }
 
+/* Loving animation */
 @keyframes cuddle {
   0%   { transform: scale(1); }
   40%  { transform: scale(1.05); }
   70%  { transform: scale(1.02); }
   100% { transform: scale(1); }
 }
+
+/* Floating emojis */
 .floating-cat {
   position: fixed;
   bottom: -30px;
@@ -54,4 +77,3 @@ body {
     opacity: 0;
   }
 }
-
