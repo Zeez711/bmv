@@ -1,8 +1,8 @@
 const messages = [
   "No My Ghala😼",
-  "Gahla… are you sure? 😔",
+" the kitten said mewooo… don’t do this to your Ziad! 😿",
+  "My Gahla… are you sure? 😔",
   "My Ghala pleaseee 💗",
-  " the kitten said mewooo… don’t do this to your Ziad! 😿",
   "What if I buy you food? 😋",
   "Tiny kitten is crying now 😭🐾",
   "Ok ok… last chance, My Ghala 😔",
